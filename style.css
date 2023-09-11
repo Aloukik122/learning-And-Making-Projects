@@ -1,0 +1,391 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.nav-bar{
+    background-color: #FFB703;
+    width: 100%;
+    height: 100px;
+}
+
+.top{
+    width: inherit;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #Ffffff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    float: inline-start;
+    
+}
+.main-logo{
+    padding-left: 100px;
+}
+
+.logo{
+    max-height: 36px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu{
+    padding-right: 100px;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.menu-item{
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+.top-button{
+    background-color: #FFB703;
+    padding: 26px 35px;
+    border: none;
+    font-weight: 500;
+    color: #010d14 !important;
+    line-height: 0;
+}
+
+
+
+.hero{
+    background-image: url("images/sld_2.jpg");
+    background-size: cover;
+    padding: 6.5rem;   
+}
+
+.hero-dash{
+    content: "\2014";
+}
+
+.hero-hedding{
+    font-size: 90px;
+    font-family: 'Playfair Display'!important;
+    font-weight: 600;
+}
+
+.hero-hedding-2{
+    font-size: 70px;
+    font-family: 'Playfair Display'!important;
+    font-weight: 500;
+    line-height: 4rem;
+    margin-bottom: 35px;
+}
+
+.hero-para{
+    width: 50%;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.hero-button{
+    margin-top: 30px;
+}
+
+
+
+.about{
+    display: flex;
+    padding: 6.5rem; 
+    align-items: center;
+}
+
+
+.about-left{
+    margin-left: 50px;
+}
+
+.left-h3{
+    padding-top: 15px;
+    font-size: 42px;
+    font-family: 'Playfair Display'!important;
+}
+
+.left-para{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 30px;
+   
+}
+
+.left-h5{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    font-family: 'DM Serif Display', serif !important;
+}
+
+.about-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.list-icon::before{
+    font-size: 10px;
+    color: #010d14;
+    background: #ffb703;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.left-list{
+    padding-right: 60px;
+}
+
+.list-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.services{
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.services-contaner{
+    display: flex;
+    justify-content: space-between;
+    padding: 6.5rem; 
+}
+.services-box{
+    width: 25%;
+    background-color: #Ffffff;
+    padding: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.services-para{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.services-btn{
+    background-color: #FFB703;
+    padding: 26px 35px;
+    border: none;
+    font-weight: 500;
+    color: #010d14 !important;
+    line-height: 0;
+}
+
+.section-2{
+    background-image: url(images/double-sec-bg.png);
+}
+
+.services-img{
+    width: 40px;
+    padding: 15px;
+    background-color: #FFB703;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+    .nav-bar{
+        width: 768px;
+        height: 50px;
+        overflow: hidden;
+    }
+    
+    .top{
+        width: inherit;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px;
+        position: fixed;
+        float: left;
+        
+    }
+    .main-logo{
+        padding-left: 30px;
+    }
+    
+    .logo{
+        max-height: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .menu{
+        padding-right: 30px;
+        overflow: hidden;
+    }
+    
+    .menu-list{
+        display: flex;
+        align-items: center;
+        margin-right: 68px;
+    }
+    
+    .menu-item{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    
+    .top-button{
+        padding: 20px 27px;
+        border: none;
+        font-weight: 500;
+        line-height: 0;
+        font-size: 12px;
+    }
+
+
+
+    
+    .hero{
+        width: 768px;
+        height: auto;
+        background-image: url("images/sld_2.jpg");
+        background-size: cover;
+        padding: 0rem; 
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .hero-left{
+        padding: 5rem 3rem;
+    }
+    
+    .hero-dash{
+        content: "\2014";
+    }
+    
+    .hero-hedding{
+        font-size: 45px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 600;
+    }
+    
+    .hero-hedding-2{
+        font-size: 35px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-para{
+        width: 50%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .hero-button{
+        margin-top: 30px;
+    }
+    
+
+
+
+
+    .about{
+        display: flex;
+        padding: 5rem 3rem; 
+        align-items: center;
+    }
+    
+    .about-image{
+        width: 200px;
+        height: auto;
+    }
+    
+    .about-left{
+        margin-left: 30px;
+    }
+    
+    .left-h3{
+        padding-top: 15px;
+        font-size: 22px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 500;
+    }
+    
+    .left-para{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        line-height: 25px;
+       
+    }
+    
+    .left-h5{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 100;
+        font-family: 'DM Serif Display', serif !important;
+    }
+    
+    .about-list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-top: 10px;
+    }
+    
+    .list-icon::before{
+        font-size: 10px;
+        color: #010d14;
+        background: #ffb703;
+        font-weight: 600;
+        text-align: center;
+        padding: 5px;
+        margin-right: 15px;
+    }
+    
+    .left-list{
+        padding-right: 60px;
+    }
+    
+    .list-item{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+
+}
