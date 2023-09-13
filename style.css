@@ -6,6 +6,14 @@
     font-weight: 500;
 }
 
+html{
+    width: infinite;
+     height: infinite;
+     margin: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+}
+
 .nav-bar{
     background-color: #FFB703;
     width: 100%;
@@ -820,7 +828,61 @@
     }
     
     
+
+
+    /* Services*/
+
+    .services{
+        text-align: left;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .services-top{
+        text-align: center;
+        margin-bottom: 10px;
+    }
     
+    .services-contaner{
+        display: block;
+        justify-content: space-between;
+        padding: 30px; 
+    }
+    .services-box{
+        width: auto;
+        background-color: #Ffffff;
+        padding: 30px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    
+    .services-para{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    
+    .services-btn{
+        background-color: #FFB703;
+        padding: 17px 17px;
+        border: none;
+        font-weight: 500;
+        color: #010d14 !important;
+        line-height: 0;
+    }
+    
+    .section-2{
+        background-image: url(images/double-sec-bg.png);
+    }
+    
+    .services-img{
+        width: 30px;
+        padding: 10px;
+        background-color: #FFB703;
+        margin-bottom: 15px;
+    }
 
 }
 
