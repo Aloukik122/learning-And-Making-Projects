@@ -61,6 +61,7 @@
 }
 
 
+/* Hero Section*/
 
 .hero{
     background-image: url("images/sld_2.jpg");
@@ -97,30 +98,102 @@
 }
 
 
+/* About Section*/
 
-.about{
-    display: flex;
-    padding: 6.5rem; 
-    align-items: center;
+
+.sec-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(20px, auto);
+    padding: 100px 30px 100px 30px;
+    
+}
+
+.two{
+    grid-column: 2/2 ;
+    grid-row: 1;
+   font-size: 18px;
+}
+
+.three{
+    grid-column: 2/2 ;
+    grid-row: 2;
+    
+}
+
+.four{
+    grid-column: 2/2 ;
+    grid-row: 3;
+   margin-bottom: 0px;
+   margin-top: 5px;
+   
+}
+
+.one{
+    grid-column: 1/2 ;
+    grid-row: 1/8;
+    margin-right: 10px;
+    text-align: center;
 }
 
 
-.about-left{
-    margin-left: 50px;
+.five{
+    grid-column: 2/2 ;
+    grid-row: 4;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.six{
+    grid-column: 2/2 ;
+    grid-row: 5;
+    margin-bottom: 10px;
+    display: flex;
+    list-style: none;
+    padding-right: 25%;
+}
+
+.left-5{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif !important;
+}
+
+.about-list{
+    text-align: left;
+    
+}
+
+.seven{
+    grid-column: 2/2;
+    grid-row: 6;
+}
+
+.about-para{
+    font-size: 14px;
+    font-family: 'roboto'!important;
+    font-weight: 500;
+    padding-right: 40px;
+}
+
+.about-3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-image{
+    width: 500px;
+}
+
+.about-list-item{
+    padding-right: 30%;
 }
 
 .left-h3{
     padding-top: 15px;
     font-size: 42px;
     font-family: 'Playfair Display'!important;
-}
-
-.left-para{
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-size: 15px;
-    line-height: 30px;
-   
 }
 
 .left-h5{
@@ -135,6 +208,8 @@
     justify-content: space-between;
     list-style: none;
     padding-top: 10px;
+    float: left;
+    margin-bottom: 10px;
 }
 
 .list-icon::before{
@@ -147,15 +222,12 @@
     margin-right: 15px;
 }
 
-.left-list{
-    padding-right: 60px;
-}
 
-.list-item{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
+
+
+
+/* Services Section*/
 
 .services{
     text-align: center;
@@ -225,12 +297,12 @@
 
     .nav-bar{
         width: 768px;
-        height: 50px;
+        height: 70px;
         overflow: hidden;
     }
     
     .top{
-        width: inherit;
+        width: 768px;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -258,7 +330,8 @@
     .menu-list{
         display: flex;
         align-items: center;
-        margin-right: 68px;
+        margin-right: 0px;
+       
     }
     
     .menu-item{
@@ -323,15 +396,107 @@
 
 
 
+
+
+
+
+    .sec-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(20px, auto);
+        padding: 60px 30px 60px 30px;
+        
+    }
+
+    .two{
+        grid-column: 1/3 ;
+        grid-row: 1;
+       text-align: center;
+       font-size: 18px;
+       margin-bottom: 15px;
+    }
+
+    .three{
+        grid-column: 1/3 ;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .four{
+        grid-column: 1/3 ;
+        grid-row: 3;
+       margin-bottom: 30px;
+       margin-top: 5px;
+        text-align: center;
+    }
+
+    .one{
+        grid-column: 1/2 ;
+        grid-row: 4/8;
+        margin-right: 20px;
+    }
+
+
+    .five{
+        grid-column: 2/2 ;
+        grid-row: 4;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .six{
+        grid-column: 2/2 ;
+        grid-row: 5;
+        margin-bottom: 10px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .left-5{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'DM Serif Display', serif !important;
+    }
+
+    .about-list{
+        text-align: left;
+    }
+
+    .seven{
+        grid-column: 2/2;
+        grid-row: 6;
+    }
+
+    .about-para{
+        font-size: 14px;
+        font-family: 'roboto'!important;
+        font-weight: 500;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .about-3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+
+    .section-2{
+        width: 768px;
+    }
+
     .about{
         display: flex;
-        padding: 5rem 3rem; 
+        padding: 5rem 2rem 5rem 2rem; 
         align-items: center;
     }
     
     .about-image{
-        width: 200px;
+        width: 300px;
         height: auto;
+        text-align: right;
     }
     
     .about-left{
@@ -389,3 +554,273 @@
     
 
 }
+
+
+
+
+
+/*    Mobile Version   */
+
+@media only screen and (max-width: 425px) {
+
+    body{
+        width: 425px;
+    }
+
+    .nav-bar{
+        max-width: 425px;
+        height: 50px;
+        overflow: hidden;
+    }
+    
+    .top{
+        width: 425px;
+        max-width: 425px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px;
+        position: fixed;
+        float: left;
+        
+    }
+    .main-logo{
+        padding-left: 30px;
+    }
+    
+    .logo{
+        max-height: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .menu{
+        padding-right: 30px;
+        overflow: hidden;
+    }
+    
+    .menu-list{
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+       
+    }
+    
+    .menu-item{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    
+    .top-button{
+        padding: 17px 17px;
+        border: none;
+        font-weight: 500;
+        line-height: 0;
+        font-size: 12px;
+    }
+
+
+/* Mobile hero*/
+    
+    .hero{
+        width: 425px;
+        height: auto;
+        background-image: url("images/sld_2.jpg");
+        background-size: cover;
+        padding: 0rem; 
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .hero-arrow{
+        font-size: 12px;
+    }
+    .hero-left{
+        padding: 3rem 2rem;
+    }
+    
+    .hero-dash{
+        content: "\2014";
+    }
+    
+    .hero-hedding{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 600;
+    }
+    
+    .hero-hedding-2{
+        font-size: 20px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-para{
+        width: 50%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .hero-button{
+        margin-top: 20px;
+    }
+
+
+
+/* mobile about  */
+
+    
+
+    .sec-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(20px, auto);
+        padding: 60px 30px ;
+        
+    }
+
+    .two{
+        grid-column: 1 ;
+        grid-row: 1;
+       text-align: center;
+       font-size: 18px;
+       margin-bottom: 0px;
+    }
+
+    .three{
+        grid-column: 1 ;
+        grid-row: 2;
+        text-align: left;
+        
+    }
+
+    .four{
+        grid-column: 1 ;
+        grid-row: 3;
+       margin-bottom: 30px;
+       margin-top: 5px;
+        text-align: left;
+    }
+
+    .one{
+        grid-column: 1 ;
+        grid-row: 4;
+        margin-right: 0px;
+        text-align: left;
+    }
+
+
+    .five{
+        grid-column: 1 ;
+        grid-row: 5;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .six{
+        grid-column: 1;
+        grid-row: 6;
+        margin-bottom: 10px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .left-5{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'DM Serif Display', serif !important;
+    }
+
+    .about-list{
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .seven{
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .about-para{
+        font-size: 12px;
+        font-family: 'roboto'!important;
+        font-weight: 500;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .section-2{
+        width: 768px;
+    }
+
+
+    .about-image{
+        width: 300px;
+        height: auto;
+    }
+    
+    .about-left{
+        margin-left: 30px;
+    }
+    
+    .left-h3{
+        padding-top: 15px;
+        font-size: 22px;
+        font-family: 'Playfair Display'!important;
+        font-weight: 500;
+    }
+    
+    .left-para{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        line-height: 25px;
+       
+    }
+    
+    .left-h5{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 100;
+        font-family: 'DM Serif Display', serif !important;
+    }
+    
+    .about-list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-top: 10px;
+    }
+    
+    .list-icon::before{
+        font-size: 10px;
+        color: #010d14;
+        background: #ffb703;
+        font-weight: 600;
+        text-align: center;
+        padding: 5px;
+        margin-right: 15px;
+    }
+    
+    .left-list{
+        padding-right: 60px;
+    }
+    
+    .list-item{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+
+}
+
