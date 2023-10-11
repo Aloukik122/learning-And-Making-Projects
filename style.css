@@ -2,8 +2,6 @@
     padding: 0px;
     margin: 0px;
     font-style: none;
-    font-family: 'Roboto';
-    font-weight: 500;
     text-decoration: none;
 
 }
@@ -17,21 +15,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: "Roboto";
+}
 
 .top {
     width: inherit;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
     background-color: #Ffffff;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: sticky;
     float: inline-start;
     transition: .5s ease;
     z-index: 10;
+    
 }
 
 .main-logo {
@@ -74,8 +76,9 @@ html {
 .hero {
     background-image: url("images/sld_2.jpg");
     background-size: cover;
-    padding: 6.5rem;
-    margin-top: 80px;
+    background-position: right right ;
+    padding: 6.5rem ;
+    padding-top: 100px;
 }
 
 .hero-dash {
@@ -85,7 +88,7 @@ html {
 .hero-hedding {
     font-size: 90px;
     font-family: 'Playfair Display' !important;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .hero-hedding-2 {
@@ -94,6 +97,15 @@ html {
     font-weight: 500;
     line-height: 4rem;
     margin-bottom: 35px;
+    display: flex;
+}
+
+.hero-house{
+    margin-left: 1%;
+    /*background-image: linear-gradient(180deg, tr 50%, blue 50%);*/
+    border-bottom: #FFB703 solid 15px;
+    display: flex;
+    height: 50px;
 }
 
 .hero-para {
@@ -104,6 +116,8 @@ html {
 
 .hero-button {
     margin-top: 30px;
+    font-weight: 700;
+    font-size: 12px;
 }
 
 
@@ -238,7 +252,7 @@ html {
 
 
 
-/* Services Section*/
+/* ----------------Services Section---------------*/
 
 .services {
     text-align: center;
@@ -255,8 +269,8 @@ html {
 .services-box {
     width: 25%;
     background-color: #Ffffff;
-    padding: 30px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 30px 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
@@ -295,14 +309,37 @@ html {
 
 .numbring{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 50px;
     font-family: "roboto";
-    padding: 100px;
+    padding: 100px 0px;
     background-image: url(/learning-And-Making-Projects/images/counter_bg_2.jpg);
     color: #FFB703;
 }
+.shadow{
+    width: 30px;
+    height: 100px;
+    background-color: #FFB7031F;
+    padding: 20px;
+    margin: 0px 100px;
+}
 
+.numbers::after{
+    content: '+';
+    margin-left: 5px;
+}
+
+.numbers{
+    font-family: 'roboto';
+    font-weight: 600;
+}
+
+.numbring p{
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    width: max-content;
+}
 
 
 /*------- Latest projests-----*/
@@ -449,7 +486,7 @@ html {
     background-image: url(/learning-And-Making-Projects/images/2.jpg) ;
     background-size: cover;
     background-position: center bottom;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     margin-top: -32px;
 }
 
@@ -465,9 +502,189 @@ html {
 }
 
 
+/*------------ News & Blog --------------*/
+
+.blog{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#blog{
+    padding-top: 50px;
+}
+.news-name{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-name p{
+    font-weight: 500;
+    margin-right: 30px;
+}
 
 
 
+/* ------------partner---------*/
+.partner{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFF3FA;
+    padding: 50px 100px;
+}
+
+.partner img{
+    width: 60px;
+}
+
+
+/*------------contect section------*/
+
+.contect-section{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    background-image: url(images/contact-bg.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.contect-section form input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.contect-section img{
+    width: 500px;
+}
+
+.contacts-info{
+    background-color: white;
+    margin: 20px;
+    width: 200px;
+    padding: 40px 80px 40px 40px;
+}
+.contact-hedding{
+    margin-top: 100px;
+}
+
+.contact{
+    margin-top: 100px;
+}
+
+.fill-it{
+   width: 400px;
+}
+
+.message{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.form-submit{
+    padding: 18px 40px;
+    background-color: #FFB703;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
+
+/*------------footer---------*/
+
+.footer{
+    display: flex;
+    padding: 80px 80px 80px 80px;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    list-style: none;
+    background-image: url(images/footer-bg.jpg);
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.footer-1 img{
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.footer-1{
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0px 20px;
+}
+
+.footer-hedding{
+    font-size: 20px;
+    margin-bottom: 50px;
+    min-width: 150px;
+}
+
+.footer p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.footer-icon{
+    display: flex;
+}
+.footer-1 i{
+    margin-right: 20px;
+    padding-top: 5px;
+    color: #FFB703;
+}
+
+.footer-1 ul{
+    margin-bottom: 20px;
+    width: max-content;
+    font-size: 14px;
+}
+
+.subscribe-email{
+    width: 15rem;
+    height: 3rem;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #333;
+
+    color: white;
+}
+
+.subscribe-button{
+    width: 15.7rem;
+    height: 3rem;
+    background-color: #FFB703;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.footer-first{
+    width: 450px;
+}
+
+.footer-1 ul::before{
+    content: '>';
+    padding-right: 15px;
+    color: #FFB703;
+    font-size: 20px;
+}
+
+.footer-subscribe{
+    margin-left: 10rem;
+}
+
+/*-----------Tablet size----------*/
 
 @media only screen and (max-width: 768px) {
 
@@ -739,7 +956,7 @@ html {
 
 
 
-/*    Mobile Version   */
+/*  ---------------  Mobile Version  ---------- */
 
 @media only screen and (max-width: 425px) {
 
@@ -771,9 +988,9 @@ html {
     }
 
     .logo {
-        max-height: 26px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        max-height: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 
     .menu {
@@ -785,20 +1002,19 @@ html {
         display: flex;
         align-items: center;
         margin-right: 0px;
-
     }
 
     .menu-item {
         margin-left: 15px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .top-button {
-        padding: 17px 17px;
+        padding: 10px 30px;
         border: none;
         font-weight: 500;
-        line-height: 0;
-        font-size: 12px;
+        line-height: 1;
+        font-size: 10px;
     }
 
 
@@ -809,8 +1025,8 @@ html {
         height: auto;
         background-image: url("images/sld_2.jpg");
         background-size: cover;
-        padding: 0rem;
-        background-position: right;
+        padding: 0rem ;
+        background-position: 75% 0% ;
         overflow: hidden;
     }
 
